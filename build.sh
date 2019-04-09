@@ -1,8 +1,8 @@
 #! /usr/bin/env bash
 
 echo ""
-echo "[way-to-algorithm-latex] latex wta.tex"
-latex wta.tex
+echo "[way-to-algorithm-latex] xelatex wta.tex"
+xelatex wta.tex
 
 echo ""
 echo "[way-to-algorithm-latex] dvips wta.ps"
