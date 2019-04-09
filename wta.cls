@@ -8,35 +8,11 @@
 \RequirePackage{kvoptions}
 \RequirePackage{etoolbox}
 \RequirePackage{xeCJK}
-\SetupKeyvalOptions{family=ELEGANT, prefix=ELEGANT@, setkeys=\kvsetkeys}
-\newcommand{\ekv}[1]{\kvsetkeys{ELEGANT}{#1}}
+\RequirePackage{amsmath,amssymb}
+\RequirePackage[amsmath,thmmarks]{ntheorem}
+\RequirePackage{color,xcolor}
+\RequirePackage{mathrsfs}
 
-% color
-\DeclareStringOption[green]{color}
-\DeclareStringOption[cn]{lang}
-
-% backward compatibility
-\DeclareVoidOption{green}{\ekv{color = green}}
-\DeclareVoidOption{cyan}{\ekv{color = cyan}}
-\DeclareVoidOption{blue}{\ekv{color = blue}}
-\DeclareVoidOption{plain}{\ekv{color = plain}}
-\DeclareVoidOption{nocolor}{\ekv{color = none}}
-\DeclareVoidOption{en}{\ekv{lang=en}}
-\DeclareVoidOption{cn}{\ekv{lang=cn}}
-
-% ----- Math option -----
-\newcommand\mailto[1]{\href{mailto:#1}{\nolinkurl{#1}}}
-
-% ----- Title Style -----
-\DeclareStringOption[hang]{titlestyle}[hang]
-% ----- backward compatibility
-\DeclareVoidOption{hang}{\ekv{titlestyle = hang}}
-\DeclareVoidOption{display}{\ekv{titlestyle = display}}
-% ----- Default Options -----
-\DeclareDefaultOption{\PassOptionsToClass{\CurrentOption}{book}}
-
-\ProcessKeyvalOptions*\relax
-% \ProcessOptions*\relax
 \LoadClass[12pt,a4paper,oneside,openany]{book}
 
 \RequirePackage{indentfirst}
