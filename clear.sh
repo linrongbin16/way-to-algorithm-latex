@@ -1,7 +1,15 @@
 #! /usr/bin/env bash
 
 quiet_rm() {
-    rm -rf $@ 2>/dev/null 1>&2
+    for var in "$@"
+    do
+        if [ -d $var ]; then
+            rm -rf $var
+        elif [ -f $var ]; then
+            rm $var
+        fi
+
+    done
 }
 
 echo ""
