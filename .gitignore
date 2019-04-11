@@ -11,4 +11,7 @@
 *.synctex(busy)
 *.thm
 *.toc
+__latexindent_temp.tex
+*.bbl
+*.blg
 .DS_Store
