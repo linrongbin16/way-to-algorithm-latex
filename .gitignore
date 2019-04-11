@@ -10,4 +10,5 @@
 *.out
 *.synctex(busy)
 *.thm
+*.toc
 .DS_Store
