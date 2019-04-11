@@ -13,7 +13,7 @@
 \RequirePackage{color,xcolor}
 \RequirePackage{mathrsfs}
 
-\LoadClass[12pt,a4paper,oneside,openany]{book}
+\LoadClass[12pt,a4paper,twoside,openany]{book}
 
 \RequirePackage{indentfirst}
 \setlength\parindent{2em}
