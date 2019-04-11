@@ -7,6 +7,7 @@
 \usepackage{xcolor}
 \usepackage[colorlinks=false, linkbordercolor={white}]{hyperref}
 \usepackage{float}
+\usepackage{amsmath}
 
 \title{算法之路}
 \author{林荣彬}
@@ -58,6 +59,15 @@
     \end{tabular}
     \caption{封面示例表格}
 \end{table}
+
+最后我们来测试一下公式以及引用的情况吧。
+
+\begin{equation}
+    \label{eq:equationshili}
+    AB^2 = BC^2 + AC^2.
+\end{equation}
+
+满足式子 \eqref{eq:equationshili} 的整数称为 \emph{勾股数}。
 
 \bibliography{wta}
 \end{document}
