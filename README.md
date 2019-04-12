@@ -1,3 +1,3 @@
-# way-to-algorithm-latex
+# Way to Algorithm LaTex Code
 
-Way to Algorithm LaTex Code
+LaTeX code for **Way to Algorithm Book**.
