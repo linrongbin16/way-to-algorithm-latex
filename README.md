@@ -1,3 +1,3 @@
 # way-to-algorithm-latex
 
-Way to Algorithm LaTex Source Code
+Way to Algorithm LaTex Code
