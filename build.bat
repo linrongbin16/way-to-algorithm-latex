@@ -1,11 +1,4 @@
-@echo off
-
-:check_exit_code
-if %errorlevel% NEQ 0 (
-    echo "[way-to-algorithm-latex] Error!"
-    exit /b %errorlevel%
-)
-goto:eof
+REM @echo off
 
 if not exist wta-image (
     echo ""
@@ -31,3 +24,11 @@ xelatex wta.tex
 call:check_exit_code
 xelatex wta.tex
 call:check_exit_code
+
+
+:check_exit_code
+if %errorlevel% NEQ 0 (
+    echo "[way-to-algorithm-latex] Error!"
+    exit /b %errorlevel%
+)
+goto:eof
